@@ -26,7 +26,7 @@ global data       	"$main\00.Data"
 
 use "$data\input\SEN_2018_EHCVM_v02_M_Stata\ehcvm_welfare_sen2018.dta",clear
 
-
+hgender hage hmstat hreligion hnation halfab heduc hdiploma hhandig hactiv7j hactiv12m hbranch hsectins hcsp
 
 tabulate  milieu, gen(milieu)
 tabulate  hgender, gen(hgender)
@@ -69,7 +69,9 @@ save "$data\survey_ehcvm_sen_2018.dta",replace
 //ehcvm_menage_bfa2021.dta 
 *===============================================================================
 
-use "$data\input\SEN_2018_EHCVM_v02_M_Stata\ehcvm_welfare_sen2018.dta",clear
+use "$data\input\SEN_2018_EHCVM_v02_M_Stata\ehcvm_menage_sen2018.dta",clear
+
+//logem mur toit sol eauboi_ss eauboi_sp elec_ac elec_ur elec_ua ordure toilet eva_toi eva_eau tv fer frigo cuisin ordin decod car superf grosrum petitrum porc lapin volail sh_id_demo sh_co_natu sh_co_eco sh_id_eco sh_co_vio
 
 tabulate  logem, gen(logem)
 tabulate  mur, gen(mur)
